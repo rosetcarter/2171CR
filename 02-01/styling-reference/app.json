@@ -7,6 +7,9 @@
     "orientation": "portrait",
     "userInterfaceStyle": "light",
     "newArchEnabled": true,
+    "router": {
+      "root": "src/app"
+    },
     "splash": {
       "resizeMode": "contain",
       "backgroundColor": "#f5efe7"
