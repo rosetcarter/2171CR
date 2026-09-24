@@ -71,6 +71,21 @@ export default function App() {
                 placeholderTextColor="#7d7368"
               />
             </View>
+
+            <View style={styles.section}>
+              <Text style={styles.sectionTitle}>Extra Section</Text>
+              <Text style={styles.sectionBody}>
+                This section was added to see the ScrollView working
+              </Text>
+              <TextInput
+                defaultValue="Hello World, you had to scroll down to see this text."
+                multiline
+                style={styles.input}
+                placeholder="Type a short note here"
+                placeholderTextColor="#7d7368"
+              />
+            </View>
+
           </View>
         </ScrollView>
       </View>
@@ -81,7 +96,7 @@ export default function App() {
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#f5efe7',
+    backgroundColor: '#b9f4e9',
   },
   scrollContent: {
     paddingLeft: 24,
@@ -95,18 +110,18 @@ const styles = StyleSheet.create({
     fontWeight: '700',
     letterSpacing: 1,
     textTransform: 'uppercase',
-    color: '#8c5d35',
+    color: '#103e39',
   },
   title: {
     fontSize: 30,
     fontWeight: '800',
     lineHeight: 36,
-    color: '#1f1b18',
+    color: '#010002',
   },
   intro: {
     fontSize: 15,
     lineHeight: 23,
-    color: '#5d554d',
+    color: '#010a0b',
   },
   summaryRow: {
     flexDirection: 'row',
@@ -116,37 +131,39 @@ const styles = StyleSheet.create({
     flex: 1,
     padding: 14,
     borderRadius: 16,
-    backgroundColor: '#ece2d1',
+    backgroundColor: '#6fefef',
     borderWidth: 1,
-    borderColor: '#d7c6ae',
+    borderColor: '#0103a9',
     gap: 4,
   },
   summaryValue: {
     fontSize: 24,
     fontWeight: '800',
-    color: '#4d3214',
+    color: '#100823',
+    textAlign: 'center',
   },
   summaryLabel: {
     fontSize: 13,
     lineHeight: 18,
-    color: '#6b5440',
+    color: '#10175b',
+    textAlign: 'center',
   },
   section: {
     padding: 18,
     borderWidth: 1,
-    borderColor: '#d7cec4',
+    borderColor: '#120078',
     borderRadius: 18,
-    backgroundColor: '#fffdfb',
+    backgroundColor: '#6fefef',
     gap: 12,
   },
   mediaRow: {
-    flexDirection: 'row',
+    flexDirection: 'row-reverse',
     alignItems: 'center',
     gap: 14,
   },
   image: {
-    width: 64,
-    height: 64,
+    width: 80,
+    height: 80,
   },
   mediaText: {
     flex: 1,
@@ -156,12 +173,12 @@ const styles = StyleSheet.create({
     fontSize: 18,
     fontWeight: '800',
     lineHeight: 24,
-    color: '#2d2620',
+    color: '#011411',
   },
   sectionBody: {
     fontSize: 14,
     lineHeight: 21,
-    color: '#5d554d',
+    color: '#090110',
   },
   pillRow: {
     flexDirection: 'row',
@@ -172,21 +189,21 @@ const styles = StyleSheet.create({
     paddingVertical: 6,
     paddingHorizontal: 10,
     borderRadius: 999,
-    backgroundColor: '#efe4d5',
+    backgroundColor: '#cdfefe',
     fontSize: 14,
     fontWeight: '700',
-    color: '#5b4d40',
+    color: '#110b53',
   },
   input: {
     minHeight: 80,
     borderWidth: 1,
-    borderColor: '#d2c4b5',
+    borderColor: '#13009f',
     borderRadius: 14,
     padding: 12,
     fontSize: 14,
     lineHeight: 20,
-    color: '#2d2620',
-    backgroundColor: '#fffdfb',
+    color: '#080329',
+    backgroundColor: '#cdfefe',
     textAlignVertical: 'top',
   },
 });
